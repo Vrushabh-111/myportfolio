@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        :root {
+            --primary-color: #a855f7;
+            --primary-color-dark: #9333ea;
+            --secondary-color: #ca8a04;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --extra-light: #faf5ff;
+            --max-width: 1200px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            padding-top: 85px; /* Adjust this to match your navbar height */
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 99;
+        }
+
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: 0.3s;
+        }
+
+        nav .logo a:hover {
+            color: var(--primary-color-dark);
+        }
+
+        nav .checkbox {
+            display: none;
+        }
+
+        nav input {
+            display: none;
+        }
+
+        nav .checkbox i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: 0.3s;
+        }
+
+        ul li a:hover {
+            border-top-color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .section {
+            background-color: var(--extra-light);
+            padding: 2rem 0; /* Add some padding to the top and bottom of the section */
+        }
+
+        .section__container {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1rem;
+            text-align: center; /* Center align text */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        p {
+            line-height: 1.6rem;
+            color: var(--text-light);
+            margin: 1rem 0; /* Add margin between paragraphs */
+            font-size: 1.1rem; /* Adjust font size for readability */
+        }

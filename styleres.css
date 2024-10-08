@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 85px; /* Adjust this to match your navbar height */
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #a855f7; /* Primary color */
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: #9333ea; /* Darker primary color */
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #1f2937; /* Text color */
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #ca8a04; /* Secondary color */
+}
+
+.section {
+  padding: 2rem 0; /* Add some padding to the top and bottom of the section */
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center; /* Center align text */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937; /* Text color */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc; /* Light border for the table */
+}
+
+th {
+  background-color: #f9f9f9; /* Light background for header */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.coordinator-roles {
+  margin-top: 20px;
+  text-align: left; /* Align text to the left */
+}
